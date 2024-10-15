@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-secondary text-dark dark:bg-dark dark:text-white h-full">
+    <!-- header  -->
+    <header class="container mx-auto h-screen font-nunito">
+        <!-- navbar -->
+        <nav class="flex items-center justify-between pt-3 px-2 sm:gap-4 ">
+            <div class="logo-container z-10">
+                <img class=" w-16  md:w-20 lg:w-32" src="./image/Logo.svg" alt="">
+            </div>
+            <ul class=" liks-container hidden md:flex items-center justify-between gap-3 ">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Offerings</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+            <div class="cta-container flex items-center justify-between gap-3 ">
+                <i class="ri-sun-line"></i>
+                <a class="hidden esm:flex" href="">Book now:</a>
+                <i onclick="toggleNav()" id="hamburger" class="z-10 ri-menu-3-line md:hidden"></i>
+            </div>
+  
+        </nav>
+        <!-- navbar/ -->
+
+        <!-- hero -->
+        <main class=" flex justify-between items-center flex-col py-20 ">
+       <div class="top-container flex items-s justify-between flex-col lg:flex-row">
+        <div class="hero-content flex items-center justify-center flex-col lg:items-start lg:flex-1 lg:gap-2 ">
+            <h2 class="text-center text-2xl md:text-3xl lg:text-left">Experiance the</h2>
+            <h1 class="text-center  text-3xl font-extrabold my-4 md:text-4xl md:font-bold lg:text-left">Beauty Redefined</h1>
+            <p class="text-center text-lg md:px-20 lg:text-left  lg:px-0 ">Indulg in top-notch beauty services with our expert team for a truly
+                tranformative experiance.</p>
+            <div class="flex items-center justify-between flex-col gap-4 my-4 md:flex-row md:justify-center ">
+                <a href="" class="py-2 px-5 bg-primary text-dark font-semibold rounded-full shadow-md hover:bg-ternery focus:outline-none focus:ring focus:ring-ternery focus:ring-opacity-75">Book Appointment</a>
+                <a href="" class="py-2 px-5  text-dark font-semibold border border-primary rounded-full shadow-md hover:bg-ternery hover:text-dark focus:outline-none focus:ring focus:ring-ternery focus:ring-opacity-75 dark:text-white">Training Enquiry</a>
+            </div>
+        </div>
+        <div class="hero-image-container flex items-center  justify-center lg:flex-1   ">
+            <img src="./hero.png" class="h-60  ml-4 lg:h-96" alt="">
+        </div>
+
+       </div>
+       <div class="bottom-container flex items-center justify-between text-center gap-3 relative my-3 ">
+            <span  class="start-quote"><i class="ri-double-quotes-l absolute top-0 text-2xl left-6 md:-left-2 md:-top-3 sm:-left-4 sm:-top-3 text-primary"></i></span>
+            <h2 class="quote-text text-lg text-dark font-bold px-3 dark:text-ternery ">Redefining Elegance, Inspiring Talent.</h2>
+            <span class="end-quote"><i class="ri-double-quotes-r absolute bottom-0 text-2xl right-9 md:-right-2 md:bottom-2 text-primary sm:-right-3 sm:-top-2"></i></span>
+       </div>
+        </main>
+        <!-- hero/ -->
+    </header>
+    <!-- header  /-->
+     <script>
+        function toggleNav(){
+            if(document.getElementById("hamburger").classList.contains("enabled")){
+                document.getElementById("hamburger").classList.remove("enabled")
+            }else{
+                document.getElementById("hamburger").classList.add("enabled")
+
+            }
+        }
+     </script>
+</body>
+
+</html>
