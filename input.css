@@ -19,3 +19,13 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .line{
+    width: 8vh;
+    height: 0.5vh;
+    background-color: white;
+    position: absolute;
+    bottom: 18%;
+    left:0;
+
+  }
