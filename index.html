@@ -14,7 +14,7 @@
 
 <body class="bg-secondary text-dark dark:bg-dark dark:text-white h-full">
     <!-- header  -->
-    <header class="container mx-auto h-screen font-nunito">
+    <header class="container mx-auto h-screen font-nunito mb-1">
         <!-- navbar -->
         <nav class="flex items-center justify-between pt-3 px-2 sm:gap-4 ">
             <div class="logo-container z-10">
@@ -22,12 +22,12 @@
             </div>
             <ul class=" liks-container hidden md:flex items-center justify-between gap-3 ">
                 <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="#about-us-section">About Us</a></li>
                 <li><a href="">Offerings</a></li>
                 <li><a href="">Contact Us</a></li>
 
             </ul>
-            <div class="cta-container flex items-center justify-between gap-3 ">
+            <div  class=" cta-container flex items-center justify-between gap-3 ">
                 <i class="ri-sun-line"></i>
                 <a class="hidden esm:flex" href="">Book now:</a>
                 <i onclick="toggleNav()" id="hamburger" class="z-10 ri-menu-3-line md:hidden"></i>
@@ -62,7 +62,30 @@
         </main>
         <!-- hero/ -->
     </header>
+
     <!-- header  /-->
+    <section id="about-us-section" class="container mt-28 mx-auto  md:mt-0  h-screen font-nunito  flex items-start  justify-start flex-col">
+        <div class="relative flex items-center justify-center w-60 mb-14">
+            <div class="line"></div>
+            <h2 class="heading text-white text-[21px] font-bold">Who we are</h2>
+        </div>
+        <div class="w-full flex items-center justify-between flex-col-reverse">
+            <div class="left flex items-center justify-center flex-1">
+                <img src="./image/about-us-img.png" alt="">
+            </div>
+            <div class="right flex items-center justify-between flex-col gap-4 flex-1">
+                <h3 class="text-dark text-2xl">Welcome to</h3>
+                <div class="relative ">
+                    <img class="absolute  top-4 left-0 -z-10" src="./image/brush-2.png" alt="">
+                    <h1 class="text-dark text-4xl font-bold z-10">Aboli Parlour</h1>
+
+                </div>
+                <p class="text-dark text-xl text-justify">Welcome to Aboli Parlour, where beauty meets relaxation. Our mission is to provide personalized, top-quality beauty services that enhance your natural radiance and leave you feeling refreshed and confident. With a team of skilled professionals, we offer a wide range of treatments, from rejuvenating facials to stunning haircuts and flawless makeup applications. What makes us unique is our commitment to using the latest techniques, premium products, and providing a tranquil, welcoming atmosphere where every visit feels like a retreat. Whether you're preparing for a special occasion or just need a little self-care, we’re here to make you look and feel your absolute best</p>
+                <a class="py-2 px-5 bg-primary text-dark font-semibold rounded-full shadow-md hover:bg-ternery focus:outline-none focus:ring focus:ring-ternery focus:ring-opacity-75" href="">Know More</a>
+            </div>
+        </div>
+    </section>
+
      <script>
         function toggleNav(){
             if(document.getElementById("hamburger").classList.contains("enabled")){
